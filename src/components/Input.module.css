@@ -1,0 +1,77 @@
+.container{
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 20px;
+}
+.inputField {
+  
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+  outline: none;
+}
+
+.inputField::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* تغییرات هنگام فوکوس */
+.inputField:focus {
+  border-color: #5a9bf4;
+  box-shadow: 0 2px 12px rgba(90, 155, 244, 0.3);
+}
+
+
+.suggestionsList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 80px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  max-width: 350px; 
+  z-index: 1;
+}
+
+.suggestionsList li {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-radius: 8px;
+}
+
+.suggestionsList li:last-child {
+  border-bottom: none;
+}
+
+.suggestionsList li:hover {
+  background-color: #e9f2fe;
+}
+
+
+.no-suggestions {
+  font-size: 14px;
+  color: #999;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 8px;
+}
